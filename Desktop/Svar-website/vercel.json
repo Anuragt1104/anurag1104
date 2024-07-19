@@ -1,0 +1,28 @@
+{
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/About",
+        "destination": "/About.html"
+      },
+      {
+        "source": "/Fortherapists",
+        "destination": "/Fortherapist.html"
+      },
+      {
+        "source": "/Media",
+        "destination": "/Media.html"
+      },
+      {
+        "source": "/Termsofuse",
+        "destination": "/Termsofuse.html"
+      },
+      {
+        "source": "/Privacypolicy",
+        "destination": "/Privacypolicy.html"
+      }
+    ]
+  }

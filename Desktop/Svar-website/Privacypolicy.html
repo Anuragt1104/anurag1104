@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="ie=edge" http-equiv="x-ua-compatible" />
+  <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport" />
+  <link href="./assets/S.png" rel="icon" />
+  <title>Svar</title>
+  <meta name="twitter:title" />
+  <meta name="description" />
+  <meta name="twitter:description" />
+  <link href="https://pmkd0phk9fc56vrn.umso.co/" rel="canonical" />
+  <link href="https://pmkd0phk9fc56vrn.umso.co/" hreflang="en" rel="alternate" />
+  <style data-version="2">
+    body {
+      font: normal normal 500 1em 'Nunito Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+      color: rgb(4, 74, 63);
+      margin: 0;
+      padding: 0;
+      --wr-max: 1140px;
+      position: relative;
+      --card-bg: rgb(255, 255, 255);
+      word-wrap: anywhere;
+      --color-bg: #fff;
+      background: #fff;
+      word-break: break-word;
+      --font-text: normal normal 500 1em 'Nunito Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      --font-title: normal normal 800 1em 'Nunito Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+      --font-system: -apple-system, BlinkMacSystemFont, Segoe UI, Inter, Helvetica, Arial, sans-serif;
+      overflow-wrap: anywhere;
+      --border-width: 1px;
+      text-rendering: optimizeLegibility;
+      --color-bg-card: #f8f9fa;
+      --fontSize-text: 1em;
+      --card-boxShadow: 0px 19px 30px -10px rgba(21, 21, 25, 0.21);
+      --fontSize-title: 2.5em;
+      --color-text-link: #1864ab;
+      --card-borderColor: rgb(255, 255, 255);
+      --card-borderWidth: 0px;
+      --card-borderRadius: 10px;
+      --color-text-primary: rgb(244, 124, 55);
+      --color-border-normal: #f1f3f5;
+      --color-accent-primary: #9c36b5;
+      --color-text-secondary: rgb(4, 74, 63);
+      -webkit-font-smoothing: antialiased;
+      --fontWeight-text-heavy: 600;
+      -moz-osx-font-smoothing: grayscale;
+      --fontWeight-text-medium: 500;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    a,
+    .link {
+      color: var(--color-text-link);
+      font-weight: var(--fontWeight-text-medium);
+      text-decoration: none;
+    }
+
+    a:not(.btn):hover {
+      text-decoration: underline;
+    }
+
+    strong {
+      font-weight: var(--fontWeight-text-heavy);
+    }
+
+    #measure-layer {
+      z-index: -1;
+      position: absolute;
+      visibility: hidden;
+    }
+
+    .wr {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 30px;
+      position: relative;
+      max-width: var(--wr-max);
+      box-sizing: border-box;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .wr {
+        padding: 0 15px;
+      }
+    }
+
+    .um-backdrop {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      position: absolute;
+    }
+
+    .um-backdrop>video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .um-backdrop>.overlay {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+    }
+
+    .madeWithUmso {
+      left: 50%;
+      color: rgb(43, 43, 43) !important;
+      bottom: 10px !important;
+      height: 30px;
+      display: flex !important;
+      padding: 0 9px;
+      z-index: 100;
+      position: fixed !important;
+      animation: keyframes-badgeFade;
+      font-size: 13px;
+      background: #fff !important;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 6px 13px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease-in-out;
+      align-items: center;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      white-space: nowrap;
+      margin-right: -70px !important;
+      border-radius: 6px;
+      text-decoration: none !important;
+      transform-origin: 50% 50%;
+      animation-duration: 1.3s;
+      transition-property: background color;
+    }
+
+    .madeWithUmso svg {
+      color: rgb(43, 43, 43);
+      width: 66px;
+      margin-top: 0;
+      transition: filter 0.2s ease-in-out;
+      margin-left: 6px;
+    }
+
+    .madeWithUmso:hover {
+      color: #fff !important;
+      background: #000000 !important;
+    }
+
+    .madeWithUmso.badge--left {
+      left: initial;
+      margin-left: 10px;
+    }
+
+    .madeWithUmso.badge--right {
+      left: 100%;
+      margin-left: -165px;
+    }
+
+    .madeWithUmso.badge--center {
+      left: 50%;
+      margin-left: -70px;
+    }
+
+    @media (max-width: 750px) {
+      .madeWithUmso.footerBadge {
+        left: 50%;
+        margin-left: -70px;
+      }
+    }
+
+    .madeWithUmso:hover svg {
+      filter: invert(1) saturate(0);
+    }
+
+    @keyframes keyframes-badgeFade {
+      0% {
+        opacity: 0;
+        transform: scale(0.8) translate(0, 10px);
+      }
+
+      80% {
+        opacity: 0;
+        transform: scale(0.8) translate(0, 10px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1) translate(0, 0);
+      }
+    }
+
+    .__umsoEditorHighlight:after {
+      top: 0;
+      left: 0;
+      right: 0;
+      border: 1px dashed #63a1ff;
+      bottom: 0;
+      content: "";
+      z-index: 9999;
+      position: absolute;
+      box-shadow: inset 0 0 15px rgba(99, 161, 255, 0.1);
+      border-radius: 5px;
+      animation-name: keyframes-editorHighlight;
+      pointer-events: none;
+      animation-duration: 1.5s;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+    }
+
+    @keyframes keyframes-editorHighlight {
+      0% {
+        box-shadow: transparent;
+        border-color: transparent;
+        background-color: transparent;
+      }
+
+      45% {
+        box-shadow: inset 0 0 15px rgba(99, 161, 255, 0.3);
+        border-color: #63a1ff;
+      }
+
+      80% {
+        box-shadow: inset 0 0 15px rgba(99, 161, 255, 0.3), ;
+        border-color: #63a1ff;
+      }
+
+      100% {
+        box-shadow: none;
+        border-color: transparent;
+        background-color: transparent;
+      }
+    }
+
+    .um-gradient-text {
+      background: -webkit-linear-gradient(var(--angle), var(--from), var(--to));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .btn {
+      font: normal normal 500 1em var(--font-system), -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+      color: var(--color-text-primary);
+      border: none;
+      cursor: pointer;
+      margin: 0;
+      display: inline-flex;
+      outline: none;
+      padding: 0.7em 0.8em;
+      position: relative;
+      background: #eee;
+      box-sizing: border-box;
+      transition: all 0.2s ease-in-out;
+      align-items: center;
+      border-radius: 3px;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .btn span {
+      text-decoration: none;
+    }
+
+    .btn--large {
+      font-size: 1.2em;
+    }
+
+    .btn--clear {
+      border: none !important;
+      outline: none !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+      background-color: transparent !important;
+    }
+
+    .btn .um-arrow {
+      margin-left: 0.4em;
+    }
+
+    .btn svg:not(.um-arrow),
+    .btn img {
+      width: initial;
+      height: 1.2em;
+      margin: -0.1em;
+    }
+
+    .btn--loading {
+      cursor: wait;
+      pointer-events: none;
+    }
+
+    .btn--loading:after {
+      width: 12px;
+      border: 2px solid rgba(125, 125, 125, 0.3);
+      height: 12px;
+      content: '';
+      display: inline-block;
+      animation: keyframes-buttonLoading;
+      margin-left: 0.6em;
+      border-radius: 50%;
+      animation-duration: 0.8s;
+      border-right-color: var(--color-text-secondary);
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    .btn--error {
+      color: #fff !important;
+      background: #c92a2a !important;
+    }
+
+    .btn--error:after {
+      float: right;
+      content: '⚠';
+      padding-left: 9px;
+    }
+
+    .btn--success {
+      color: #fff !important;
+      background: #2f9e44 !important;
+    }
+
+    .btn--success:after {
+      float: right;
+      content: '✓';
+      padding-left: 9px;
+    }
+
+    .btn--success:before {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      position: absolute;
+      box-shadow: 0 0 0 0 #2f9e443b;
+      border-radius: inherit;
+      animation-name: keyframes-buttonSuccess;
+      pointer-events: none;
+      animation-duration: 0.4s;
+      animation-fill-mode: both;
+      animation-timing-function: ease-out;
+    }
+
+    .btn svg:first-child,
+    .btn img:first-child {
+      margin-right: 0.4em;
+    }
+
+    .btn svg:last-child,
+    .btn img:last-child {
+      margin-left: 0.4em;
+    }
+
+    .btn.btn--icon svg,
+    .btn.btn--icon img {
+      width: initial;
+      height: 1.2em;
+      margin: -0.1em;
+    }
+
+    .btn:hover,
+    .btn:hover span {
+      text-decoration: none;
+    }
+
+    @keyframes keyframes-buttonSuccess {
+      from {
+        box-shadow: 0 0 0 0 rgba(47, 158, 68, 0);
+      }
+
+      to {
+        box-shadow: 0 0 0 5px rgba(47, 158, 68, 0.3);
+      }
+    }
+
+    @keyframes keyframes-buttonLoading {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .um-nav-wrapper {
+      color: var(--color-text-primary);
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+    }
+
+    .um-nav-wrapper .um-nav-drawerTrigger {
+      display: none;
+    }
+
+    .um-nav-wrapper.um-space-between .um-nav-links {
+      paddingleft: 30;
+      margin-right: auto;
+    }
+
+    .um-nav-wrapper.um-links-centered .um-nav-links {
+      flex: 1;
+      margin: 0 auto;
+    }
+
+    .um-nav-wrapper.um-links-centered .um-nav-children {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .um-nav-wrapper.um-children-centered .um-nav-links {
+      flex: 1;
+    }
+
+    .um-nav-wrapper.um-children-centered .um-nav-children {
+      flex: 1;
+      margin: 0 auto;
+    }
+
+    .um-nav-wrapper.um-classic .um-nav-children {
+      margin-right: auto;
+    }
+
+    .um-nav-wrapper.um-hidden .um-nav-links {
+      display: none;
+    }
+
+    .um-nav-wrapper.um-hidden .um-nav-buttons {
+      display: none;
+    }
+
+    .um-nav-links {
+      margin: 0;
+      display: flex;
+      padding: 0;
+      font-size: 15px;
+      list-style: none;
+      align-items: center;
+    }
+
+    .um-nav-links>li {
+      position: relative;
+    }
+
+    .um-nav-links>li>button {
+      font: inherit;
+      color: inherit;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      background: transparent;
+    }
+
+    .um-nav-links>li>a {
+      font: inherit;
+      color: inherit;
+      padding: 10px 10px;
+      white-space: nowrap;
+    }
+
+    .um-nav-links>li:hover .um-nav-flyout {
+      display: flex;
+    }
+
+    .um-nav-flyout {
+      top: 100%;
+      left: 50%;
+      width: 250px;
+      display: none;
+      padding: 10px;
+      z-index: 10;
+      position: absolute;
+      max-width: 250px;
+      min-width: 120px;
+      transform: translate(-50%);
+      background: var(--nav-flyout-bg);
+      box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+      ;
+      border-radius: 5px;
+    }
+
+    .um-nav-flyout ul {
+      margin: 0;
+      display: flex;
+      padding: 0;
+      flex-grow: 1;
+      list-style: none;
+      flex-direction: column;
+    }
+
+    .um-nav-item {
+      color: var(--color-text-primary);
+      display: flex;
+      padding: 8px 12px;
+      align-items: center;
+      border-radius: 4px;
+    }
+
+    .um-nav-item:hover {
+      background: rgba(141, 141, 141, 0.09);
+      text-decoration: none !important;
+    }
+
+    .um-nav-item span {
+      color: var(--color-text-secondary);
+      display: block;
+      font-size: 0.9em;
+      font-weight: 400;
+      text-decoration: none;
+    }
+
+    .um-nav-item .um-icon {
+      flex-shrink: 0;
+      margin-right: 15px;
+    }
+
+    .um-nav-buttons {
+      display: flex;
+      align-items: center;
+      margin-left: 20;
+    }
+
+    .um-nav-buttons>button,
+    .um-nav-buttons>a {
+      font-size: 15px !important;
+      margin-left: 10px;
+    }
+
+    .um-nav-drawerTrigger {
+      width: 3em;
+      border: none;
+      height: 3em;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      background: transparent;
+      border-radius: 4px;
+    }
+
+    .um-nav-drawerTrigger:after {
+      top: 9px;
+      left: 7px;
+      width: 26px;
+      height: 4px;
+      content: '';
+      opacity: 0.8;
+      position: absolute;
+      background: var(--color-text-secondary);
+      box-shadow: 0 8px 0 var(--color-text-secondary), 0 16px 0 var(--color-text-secondary);
+      border-radius: 2px;
+    }
+
+    .um-nav-drawerTrigger.um-hidden {
+      display: none;
+    }
+
+    @keyframes keyframes-navbar {
+      0% {
+        opacity: 0;
+        transform: scale(0.9) translate(0, -10px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1) translate(0, 0);
+      }
+    }
+
+    .um-nav-drawer {
+      top: 10px;
+      right: 10px;
+      width: 90%;
+      z-index: 999;
+      overflow: scroll;
+      position: fixed;
+      font-size: 15px;
+      max-width: 300px;
+      background: var(--nav-flyout-bg);
+      box-shadow: 0px 10px 50px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2);
+      max-height: calc(100vh - 20px);
+      border-radius: 10px;
+    }
+
+    .um-nav-drawer.um-hidden {
+      display: none;
+    }
+
+    .um-nav-drawer:not(.um-hidden) {
+      animation: keyframes-navbar;
+      transform-origin: 100% 0;
+      animation-duration: 300ms;
+    }
+
+    .um-nav-drawer header {
+      display: flex;
+      padding: 5px;
+      border-bottom: 1px solid var(--color-border-normal);
+      justify-content: flex-end;
+    }
+
+    .um-nav-drawer .um-drawer-buttons {
+      margin: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .um-nav-drawer .um-drawer-links {
+      display: flex;
+      list-style: none;
+      flex-direction: column;
+    }
+
+    .um-nav-drawer .um-drawer-links>li {
+      border-bottom: 1px solid var(--color-border-normal);
+    }
+
+    .um-nav-drawer .um-drawer-links>li>button {
+      all: unset;
+      font: inherit;
+      width: 100%;
+      cursor: pointer;
+      padding: 12px 20px;
+      position: relative;
+      font-size: 1em;
+      box-sizing: border-box;
+      font-weight: var(--fontWeight-text-medium);
+    }
+
+    .um-nav-drawer .um-drawer-links>li>a {
+      font: inherit;
+      display: block;
+      padding: 12px 20px;
+      font-size: 1em;
+    }
+
+    .um-nav-drawer .um-drawer-links>li>ul {
+      margin: 0;
+      display: none;
+      list-style: none;
+      margin-top: -5px;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      flex-direction: column;
+    }
+
+    .um-nav-drawer .um-drawer-links>li>ul>li>a {
+      font: inherit;
+      color: inherit;
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
+    .um-nav-drawer .um-drawer-links li.um-open>ul {
+      display: flex;
+    }
+
+    .um-nav-drawer .um-drawer-links li.um-open button {
+      font: inherit;
+      color: var(--color-text-secondary);
+      opacity: 0.7;
+    }
+
+    .um-nav-drawer .um-drawer-links li.um-open button:before {
+      top: calc(50% - 2px);
+      transform: rotate(135deg);
+    }
+
+    .um-nav-drawer .um-drawer-links>li>button:before {
+      top: calc(50% - 6px);
+      right: 20px;
+      width: 7px;
+      border: 2px solid var(--color-text-secondary);
+      height: 7px;
+      content: "";
+      opacity: 0.6;
+      position: absolute;
+      transform: rotate(-45deg);
+      border-top-width: 0;
+      border-right-width: 0;
+      border-bottom-left-radius: 2px;
+    }
+
+    .um-nav-drawer .um-drawer-buttons button {
+      width: 100%;
+      flex-grow: 1;
+      font-size: 15px !important;
+      margin-bottom: 10px;
+    }
+
+    .um-nav-drawer .um-drawer-buttons button:last-child {
+      margin-bottom: 0;
+    }
+
+    .um-nav-drawer .um-drawer-buttons a {
+      width: 100%;
+      flex-grow: 1;
+      font-size: 15px !important;
+      margin-bottom: 10px;
+    }
+
+    .um-nav-drawer .um-drawer-buttons a:last-child {
+      margin-bottom: 0;
+    }
+
+    .um-nav-drawer header .um-nav-drawerClose {
+      all: unset;
+      width: 40px;
+      border: none;
+      cursor: pointer;
+      height: 40px;
+      margin: 0;
+      padding: 0;
+      font-size: 30px;
+      background: transparent;
+      text-align: center;
+    }
+
+    .umsoModal {
+      top: 50%;
+      left: 50%;
+      color: black;
+      display: block;
+      padding: 40px;
+      z-index: 10001;
+      position: fixed;
+      min-width: 500px;
+      transform: translate(-50%, -50%);
+      background: white;
+      box-shadow: rgba(14, 18, 22, 0.35) 0px 10px 38px -10px, rgba(14, 18, 22, 0.2) 0px 10px 20px -15px;
+      min-height: 300px;
+      overflow-y: initial !important;
+      border-radius: 10px;
+    }
+
+    .umsoModalOverlay {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      z-index: 10000;
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.44);
+    }
+
+    .umsoModalWrapper {
+      display: none;
+    }
+
+    .umsoModalWrapper.umsoModalOpen {
+      display: block;
+    }
+  </style>
+  <style data-content="sections" data-version="2">
+    ._58ce83d8 {
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 90px;
+      display: flex;
+      z-index: 99;
+      position: absolute;
+      background: transparent;
+      box-sizing: border-box;
+      padding-top: 15px;
+    }
+
+    ._58ce83d8>.wr {
+      height: 100%;
+    }
+
+    ._f4c879d8 {
+      font: normal normal 400 1em var(--font-system), -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+      border: var(--border-width) solid var(--color-border-normal);
+      height: 100%;
+      display: flex;
+      padding: 0 20px;
+      z-index: 90;
+      position: relative;
+      flex-grow: 1;
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.2);
+      box-sizing: border-box;
+      align-items: center;
+      border-radius: 5px;
+      flex-direction: row;
+      --nav-flyout-bg: var(--color-bg);
+      --color-text-primary: rgb(9, 65, 55);
+    }
+
+    ._e527b3d4 {
+      margin: 0;
+      flex-shrink: 0;
+      margin-right: auto;
+    }
+
+    ._e527b3d4>a,
+    ._e527b3d4>span {
+      font: var(--font-title);
+      color: inherit;
+      display: flex;
+      align-items: center;
+      line-height: 0;
+    }
+
+    ._e527b3d4>a:hover,
+    ._e527b3d4>span:hover {
+      text-decoration: none;
+    }
+
+    ._e527b3d4>a>div+span,
+    ._e527b3d4>span>div+span {
+      margin-left: calc(15px * var(--gap));
+    }
+
+    ._ce468ac9 {
+      display: block;
+      max-width: calc(200px * var(--scale));
+      max-height: calc(50px * var(--scale));
+    }
+
+    ._dd882343 {
+      position: relative;
+      padding-top: calc(50px + 90px);
+      padding-bottom: 50px;
+    }
+
+    ._3257b288 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    ._0dc1dfa2 {
+      color: var(--color-accent-primary);
+      margin-top: 0;
+    }
+
+    ._14688ea7 {
+      font: var(--font-title);
+      color: var(--color-text-primary);
+      margin: 0 0 0 0;
+      font-size: var(--fontSize-title);
+    }
+
+    ._07826d64 {
+      margin: 0.5em 0 0 0;
+      font-size: 1.2em;
+    }
+
+    ._c4b89fde {
+      color: rgb(255, 255, 255);
+      display: flex;
+      padding: 30px 0 60px 0;
+      position: relative;
+      background: rgb(255, 125, 49);
+      border-top: 1px solid var(--color-border-normal);
+      --color-text-primary: rgb(255, 255, 255);
+      --color-text-secondary: rgb(255, 255, 255);
+    }
+
+    ._bea1daea {
+      gap: 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 500px) {
+      ._bea1daea {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+    }
+
+    ._c0e4633f {
+      font-size: 1em;
+    }
+
+    ._a6d0f97b {
+      margin-top: 10px;
+    }
+
+    ._9fc8f72f {
+      display: block;
+      max-width: calc(200px * var(--scale));
+      max-height: calc(40px * var(--scale));
+    }
+
+    ._4dba2c1d {
+      gap: 10px;
+      display: flex;
+      margin-top: 1em;
+    }
+
+    ._3d4606c5 {
+      color: inherit;
+    }
+
+    ._3d4606c5:hover {
+      color: var(--color-text-primary);
+    }
+
+    ._317000c4 {
+      display: block;
+    }
+
+    ._370825cf {
+      margin: -10px;
+      display: flex;
+      margin-top: 10px;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    ._370825cf>* {
+      margin: 10px;
+    }
+
+    ._6d77f4ac {
+      gap: 80px;
+      margin: 0;
+      display: flex;
+      padding: 0;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+
+    ._f7277ae9 {
+      color: var(--color-text-primary);
+      margin: 0 0 5px 0;
+      font-weight: var(--fontWeight-text-medium);
+    }
+
+    ._a1fe80f4 {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    ._171c7314 {
+      padding: 5px 0;
+      font-size: 0.9em;
+    }
+
+    ._7d179ab3 {
+      color: var(--color-text-secondary);
+      padding: 10px 0;
+    }
+  </style>
+  <link href="css2" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="_58ce83d8">
+    <div class="wr">
+      <div class="_f4c879d8">
+        <nav class="_2306d92f um-nav-wrapper um-classic um-hidden" id="jpkngpak23">
+          <div class="um-nav-children">
+            <div class="_e527b3d4" style="--gap:1;font-size:16px"><a>
+                <div class="_2446a2ff" style="--scale:0.7"><img alt="11.svg" class="_ce468ac9"
+                    src="./assets/svar.svg" /></div><span class="_9b621667"></span>
+              </a></div>
+          </div>
+          <ul class="um-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Fortherapist.html">For Therapists</a></li>
+            <li><a href="Media.html">Media</a></li>
+            <!-- <li><a href="">Blogs</a></li> -->
+          </ul>
+          <div class="um-nav-buttons"></div>
+        </nav><button class="um-nav-drawerTrigger" id="jpkngpak23-drawerTrigger" title="Open Mobile Menu"></button>
+        <div class="_2306d92f um-nav-drawer um-hidden" id="jpkngpak23-drawer">
+          <header><button class="um-nav-drawerClose"><svg fill="none" height="24" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24"
+                xmlns="http://www.w3.org/2000/svg">
+                <line x1="18" x2="6" y1="6" y2="18"></line>
+                <line x1="6" x2="18" y1="6" y2="18"></line>
+              </svg></button></header>
+          <div class="um-drawer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Fortherapist.html">For Therapists</a></li>
+            <li><a href="Media.html">Media</a></li>
+            <!-- <li><a href="">Blogs</a></li> -->
+          </div>
+          <div class="um-drawer-buttons"></div>
+        </div>
+        <script>!function () { const e = document.getElementById('jpkngpak23'); if (!e) return; const t = document.getElementById('jpkngpak23-drawerTrigger'), n = document.getElementById('jpkngpak23-drawer'); document.addEventListener('click', (function (e) { n.contains(e.target) || e.target === t || n.classList.add('um-hidden') })); const d = n.querySelector('.um-nav-drawerClose'), s = n.querySelectorAll('.um-drawer-links > li > button'), i = e.querySelector('.um-nav-children'), r = e.querySelector('.um-nav-links'), c = e.querySelector('.um-nav-buttons'); t.addEventListener('click', (function () { n.classList.remove('um-hidden') })), d.addEventListener('click', (function () { n.classList.add('um-hidden') })), s.forEach((function (e) { e.addEventListener('click', (function () { this.parentNode.classList.toggle('um-open') })) })); let o = 0, u = !0; function a() { !1 === u && (o = (i?.offsetWidth || 0) + (r?.offsetWidth || 0) + (c?.offsetWidth || 0)), l() } function l() { e.offsetWidth - 10 < o ? (u = !0, e.classList.add('um-hidden'), t.classList.remove('um-hidden')) : (u = !1, e.classList.remove('um-hidden'), t.classList.add('um-hidden'), n.classList.add('um-hidden')) } new ResizeObserver(l).observe(document.body), i && new ResizeObserver(a).observe(i), c && new ResizeObserver(a).observe(c), r && new ResizeObserver(a).observe(r), a(), l() }();</script>
+      </div>
+    </div>
+  </section>
+  <section class="_dd882343">
+    <div class="wr">
+      <header class="_3257b288">
+        <h1 class="_14688ea7">Privacy Policy</h1>
+        <p class="_07826d64"><strong>Please note that the Privacy Policy was last revised on March 4,
+            2024</strong><br /><br /><strong>1. General</strong><br /><br />At Svar, we care about your personal
+          information, so we have prepared this Privacy Policy to explain how we collect, use, and share it. This
+          Privacy Policy applies to Svar websites, mobile apps, and related services. By using the Service, you agree
+          with Svar’s collection, use, and sharing of your personal information in accordance with the terms of this
+          Privacy Policy. Certain Svar services are subject to additional or different terms. Please note that Svar is
+          constantly testing and improving our product features. Any features discussed in this Privacy Policy may not
+          be available to all users or in all jurisdictions.<br /><br /><strong>2. Information We
+            Collect</strong><br /><br />When you use the Service, Svar may collect the following personal information
+          about you.<br /><br /><strong><u><em>a. Account Registration</em></u></strong><br /><br />To register for a
+          Svar account, you may provide us with your age and email address. In some countries, you may also provide us
+          with your phone number. You may also register for a Svar account using certain social logins, such as Google
+          and Facebook. If you register for Svar using a social login, Svar may receive information about you from your
+          social login provider, including your email address and contacts. You can manage your Svar account and social
+          logins from your <a href="https://en.duolingo.com/settings/account"
+            rel="noopener noreferrer nofollow"><u>Settings</u></a>.<br /><br /><strong><u><em>b. Profile Page &amp;
+                User-Generated Content</em></u></strong><br /><br />After you register for your Svar account, a profile
+          page will be created for you (“Profile”). Your Profile will be populated by information you submit, such as
+          your name, username, bio, and profile picture (“User-Generated Content”). <br /><br /><strong><u><em>c.
+                Speaking Challenges</em></u></strong><br /><br />Some lessons involve you speaking into the Svar app. To
+          recognize speech, your audio may be sent to a third-party provider such as Google, Apple, or Amazon Web
+          Services. Svar may also collect and analyze your speech to help us understand the effectiveness of our lessons
+          and to improve the product. Any audio you share with Svar is anonymized when it reaches our
+          servers.<br /><br /><strong><u><em>d. Activity Data</em></u></strong><br /><br />When you use the Service, we
+          may generate data about your use of the Service, which may include your browser and device data, log data, and
+          IP address. We will also generate data regarding your engagement in educational activities on the
+          Service.<br /><br /><strong><u><em>e. Cookies</em></u></strong><br /><br />When you access the Svar website,
+          we store certain data from your browser using cookies. A cookie is a piece of data stored on the user’s
+          computer tied to data about the user. We use session ID cookies to confirm that users are logged in. If you do
+          not want your data to be collected by cookies, there is a simple procedure in most browsers that allows you to
+          deny or accept the cookie feature. However, cookies may be necessary to provide you with certain features
+          available on the website (e.g., customized information). <br /><br /><strong><u><em>f. Google
+                Analytics</em></u></strong><br /><br />We use Google Analytics, which is a web analytics tool that helps
+          us understand how users engage with our website. Like many services, Google Analytics uses first-party cookies
+          to track user interactions, as in our case, where they are used to collect information about how users use our
+          site. This information is used to compile reports and to help us improve our site. These reports disclose
+          website trends without identifying individual visitors. You can opt out of Google Analytics by installing
+          Google’s browser add-on available <a href="https://tools.google.com/dlpage/gaoptout"
+            rel="noopener noreferrer nofollow"><u>here</u></a>.<br /><br />3. <strong>How We Process Your
+            Information</strong><br /><br />Svar may process your personal information according to the following legal
+          bases: to provide products or services you request, to promote Svar’s legitimate interests, to comply with
+          legal obligations, and with your consent. In particular, Svar may process and share your personal information
+          in the following ways:<br /><br /><strong><u><em>a. Providing and improving the
+                Service</em></u></strong><br /><br />Svar will process your personal information to provide and improve
+          the Service. For example, we will use the information you provide to maintain your Profile and learning
+          progress, personalize learning content, detect and fix bugs, perform research, and provide customer service to
+          you. Svar may share personal information with third parties that help us provide or improve the Service,
+          including hosting providers such as Amazon Web Services, search engine providers such as Google, etc. Svar may
+          also share your information with third-party vendors that support product features such as AI, speech
+          recognition, and content moderation. <br /><br /><strong><u><em>b. Communicating with
+                you</em></u></strong><br /><br />Svar will use the email address or phone number you provide to send you
+          the following types of messages: Essential messages to support the operation of the Service. Messages to
+          support the Svar teaching methodology and reinforce your learning, such as learning tips, reminders to
+          practice, and progress reports. Notifications about friend requests and your friends’ progress on Duolingo.
+          Announcements regarding changes to the Service or products. Announcements of new Svar products, services,
+          offers, or research opportunities. You may opt-out of receiving non-essential messages in your <a
+            href="https://en.duolingo.com/settings/account"
+            rel="noopener noreferrer nofollow"><u>Settings</u></a>.<br /><br /><strong><u><em>c. Complying with law and
+                preventing harmful activities</em></u></strong><br /><br />Svar may process and share personal
+          information if necessary to comply with legal requests, such as subpoenas or court orders. Svar may share
+          personal information when we believe it is necessary to comply with law, to protect our interests or property,
+          to prevent fraud or other illegal activity, to assist law enforcement, or to prevent imminent harm. This may
+          include sharing information with other companies, lawyers, agents, or government
+          agencies.<br /><br /><strong><u><em>d. Personalized advertising</em></u></strong><br /><br />Svar may process
+          and share your personal information for the purpose of providing you with personalized advertising. To provide
+          personalized advertising, we work with a variety of third-party advertising networks, marketing analytics
+          service providers, and website analysis firms, such as Google, Facebook, Oath, and Unity. These third-party
+          advertising service providers collect and use personal information about your visits to and use of the
+          Service, as well as other websites, in order to serve you with advertisements and content tailored to meet
+          your preferences and likely interests, and better understand ad effectiveness. Aggregate demographic and
+          interest data will also be used for market research purposes. <br /><br /><strong><u><em>e. Anonymous
+                information</em></u></strong><br /><br />Svar may process aggregated, de-identified, or otherwise
+          anonymous or anonymized information for any purpose. Such information is not considered personal
+          information.<br /><br />4. <strong>Your Data Subject Rights</strong><br /><br />You also have the following
+          rights in relation to the personal information we hold about you, in addition to any other rights required by
+          applicable law: Know what personal information we have collected about you. Access a copy of the personal
+          information that we hold about you. Know what personal information about you we have shared with third
+          parties. Opt out of the sharing of your personal information with third parties. Object to our processing of
+          your personal information. Request that we limit our use of your sensitive personal information to what is
+          necessary to perform the services you requested. Not be discriminated against for exercising your data subject
+          rights. Request that we delete any personal information we have collected from you. Request that we correct
+          any inaccurate personal information about you. Export the personal information you have provided to Duolingo
+          in a format that can be transferred electronically to a third party. Withdraw any consent you previously gave
+          us to process your personal information. Delete your Svar account by following the instructions in the
+          Service. You may update or correct your information, and exercise certain opt-out rights. Please note that
+          these rights are not absolute and Svar may refuse requests to exercise data subject rights if there is a
+          legitimate reason, such as if we cannot authenticate your identity, if the request could violate the rights of
+          a third party or applicable law, or if the request could interfere with a Svar service or prevent us from
+          delivering a service you requested. <br /><br />5. <strong>Data Retention</strong><br /><br />Svar will
+          generally retain your personal information until your account is deleted. However, Svar may retain certain
+          information longer if necessary to provide our Service, defend our legitimate interests or those of third
+          parties, comply with legal requirements, resolve or defend ourselves in disputes, investigate misuse or
+          disruption of the Service, or perform agreements. We may also retain anonymous data
+          indefinitely.<br /><br />6. <strong>Do Not Track</strong><br /><br />The Service is not designed to respond to
+          “do not track” signals sent by some browsers.<br /><br />7. <strong>Links to Third-Party
+            Websites</strong><br /><br />The Service may contain links to other websites. Svar is not responsible for
+          the content or privacy practices of other websites, including any personal or financial information collected
+          by third-party payment processors. We encourage users to be aware of the privacy policies of other websites
+          they visit. This Privacy Policy applies only to information collected by Svar. Any time you click on a link
+          (including advertising banners) or submit your personal information to a third-party website, you will be
+          subject to that third party’s privacy policies.<br /><br />8. <strong>Privacy Policy
+            Updates</strong><br /><br />We may update our Privacy Policy to reflect changes to our information
+          practices. If we do this and the changes are material, we will indicate the date these terms were last revised
+          at the bottom of the Privacy Policy. <br /><br />9. <strong>Data Transfer</strong><br />is based in the United
+          States and processes data in India, which may not provide equivalent levels of data protection as your home
+          jurisdiction. Svar may transfer the data of users outside India to India.<br /><br /><br /><strong>13.
+            Supplemental Terms in Certain Jurisdictions</strong><br /><br />In some jurisdictions, the Service may be
+          subject to supplemental privacy policies or local laws. For users in those jurisdictions, the applicable
+          supplemental privacy policies and local laws will take precedence over this Privacy Policy to the extent they
+          conflict.<br /><br /><strong>14. Contact Us</strong><br /><br />Svar Smart Solutions Pvt. Ltd. is the data
+          controller of your data for the purposes of the General Data Protection Regulation (“GDPR”) and any relevant
+          local legislation. <br /><br />Last revised on June 13, 2024.<strong><br /></strong></p>
+      </header>
+    </div>
+  </section>
+  <footer class="_c4b89fde">
+    <div class="wr">
+      <div class="_bea1daea">
+        <div class="_240f2910"><span class="_c0e4633f">Copyright © 2024 Svar Smart Solutions Pvt Ltd</span>
+          <div class="_a6d0f97b" style="--scale:1.3"><img alt="umso.png" class="_9fc8f72f"
+              src="./assets/Svarfooter.png" /></div>
+          <div class="_4dba2c1d"><a class="_3d4606c5" href="https://www.facebook.com/"><svg class="um-icon _317000c4"
+                height="24" viewbox="0 0 448 512" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M448 56.7v398.5a24.7 24.7 0 0 1-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7A24.8 24.8 0 0 1 0 455.3V56.7A24.8 24.8 0 0 1 24.7 32h398.5A24.8 24.8 0 0 1 448 56.7z"
+                  fill="currentColor"></path>
+              </svg></a><a class="_3d4606c5" href="https://www.instagram.com/"><svg class="um-icon _317000c4"
+                height="24" viewbox="0 0 448 512" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6a74.8 74.8 0 1 1 .1-149.3 74.8 74.8 0 0 1-.1 149.3zm146.4-194.3a26.7 26.7 0 1 1-53.6 0 26.8 26.8 0 0 1 53.6 0zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388a75.6 75.6 0 0 1-42.6 42.6c-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9A75.6 75.6 0 0 1 49.4 388c-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1A75.6 75.6 0 0 1 92 81.2c29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9a75.6 75.6 0 0 1 42.6 42.6c11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  fill="currentColor"></path>
+              </svg></a><a class="_3d4606c5" href="https://twitter.com/"><img alt="xtwitter.svg"
+                class="um-icon _317000c4" src="./assets/twitterx.svg"
+                style="position:relative;width:24px;height:24px;display:block;object-fit:contain" /></a><a
+              class="_3d4606c5" href=""><img alt="linkedin.svg" class="um-icon _317000c4"
+                src="./assets/linkedin.svg"
+                style="position:relative;width:24px;height:24px;display:block;object-fit:contain" /></a></div>
+          <div class="_370825cf umsoPluginTarget"></div>
+        </div>
+        <ul class="_6d77f4ac">
+          <li class="_15091c77">
+            <h4 class="_f7277ae9">Pages</h4>
+            <ul class="_a1fe80f4">
+              <li class="_171c7314"><a class="_7d179ab3" href="About.html">About</a></li>
+              <li class="_171c7314"><a class="_7d179ab3" href="Fortherapist.html">For Therapists</a></li>
+              <!-- <li class="_171c7314"><a class="_7d179ab3" href="">GameGen AI</a></li>
+              <li class="_171c7314"><a class="_7d179ab3" href="">Blogs</a></li> -->
+            </ul>
+          </li>
+          <li class="_15091c77">
+            <h4 class="_f7277ae9">Legal</h4>
+            <ul class="_a1fe80f4">
+              <li class="_171c7314"><a class="_7d179ab3" href="Privacypolicy.html">Privacy Policy</a></li>
+              <li class="_171c7314"><a class="_7d179ab3" href="Termsofuse.html">Terms of Use</a></li>
+              <li class="_171c7314"><a class="_7d179ab3" href="Media.html">In the media</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <script>window.OpenModal = function (o) { const e = document.querySelector('#' + o + '.umsoModalWrapper'); if (!e) return; const n = e.querySelector('.umsoModalOverlay'); e && n ? (e.style.display = 'block', n.addEventListener('click', (() => { window.CloseModal(o) }), { once: !0 })) : console.error('modal not found ', o) }, window.CloseModal = function (o) { const e = document.querySelector('#' + o + '.umsoModalWrapper'); e ? e.style.display = 'none' : console.error('modal not found', o) };</script>
+  <script>!function () { const e = false; window.SendEvent = function (n) { if (!n) return void console.error('error when sending event'); const t = JSON.stringify({ siteId: n.siteId, category: n.category, name: n.name, data: n.data, isPriorBlockingEnabled: e }); if (n.asBeacon && navigator.sendBeacon) return void navigator.sendBeacon('/api/event', t); let o = new XMLHttpRequest; o.open('POST', '/api/event', !0), o.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8'), o.send(t) } }(); !function () { const e = false, n = new URLSearchParams(window.location.search), t = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content']; window.PageView = function () { const o = { referrer: document.referrer, path: window.location.pathname, isPriorBlockingEnabled: e }; t.forEach((function (e) { const t = n.get(e); t && (o[e] = t) })); let i = new XMLHttpRequest; i.open('POST', '/api/view', !0), i.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8'), i.send(JSON.stringify(o)) }, window.PageView() }(); !function () { const t = document.querySelectorAll('a'), n = new URLSearchParams(window.location.search), e = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content']; Array.prototype.forEach.call(t, (function (t, c) { t.addEventListener('click', (function (c) { const o = { url: t.href, btn_id: t.id }; e.forEach((function (t) { const e = n.get(t); e && (o[t] = e) })), window.SendEvent({ siteId: 'pmkd0phk9fc56vrn', category: 'button', name: t.innerText, data: o, asBeacon: !0 }) })) })) }();</script>
+  <script>!function (e, t) { "function" == typeof define && define.amd ? define([], function () { return t(e) }) : "object" == typeof exports ? module.exports = t(e) : e.SmoothScroll = t(e) }("undefined" != typeof global ? global : "undefined" != typeof window ? window : this, function (b) { "use strict"; function O() { for (var n = {}, e = 0; e < arguments.length; e++)!function (e) { for (var t in e) e.hasOwnProperty(t) && (n[t] = e[t]) }(arguments[e]); return n } function c(t) { var n; try { n = decodeURIComponent(t) } catch (e) { n = t } return n } function s(e) { "#" === e.charAt(0) && (e = e.substr(1)); for (var t, n, o = String(e), r = o.length, a = -1, i = "", c = o.charCodeAt(0); ++a < r;) { if (0 === (t = o.charCodeAt(a))) throw new InvalidCharacterError("Invalid character: the input contains U+0000."); i += 1 <= t && t <= 31 || 127 == t || 0 === a && 48 <= t && t <= 57 || 1 === a && 48 <= t && t <= 57 && 45 === c ? "\\" + t.toString(16) + " " : 128 <= t || 45 === t || 95 === t || 48 <= t && t <= 57 || 65 <= t && t <= 90 || 97 <= t && t <= 122 ? o.charAt(a) : "\\" + o.charAt(a) } try { n = decodeURIComponent("#" + i) } catch (e) { n = "#" + i } return n } function I() { return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.body.clientHeight, document.documentElement.clientHeight) } function w(e) { return e ? (t = e, parseInt(b.getComputedStyle(t).height, 10) + e.offsetTop) : 0; var t } function C(e, t, n, o) { var r; t.emitEvents && "function" == typeof b.CustomEvent && (r = new CustomEvent(e, { bubbles: !0, detail: { anchor: n, toggle: o } }), document.dispatchEvent(r)) } var L = { ignore: "[data-scroll-ignore]", header: null, topOnEmptyHash: !0, speed: 500, clip: !0, offset: 0, easing: "easeInOutCubic", customEasing: null, updateURL: !0, popstate: !0, emitEvents: !0 }; return function (o, e) { var g, r, y, v, t, S, E = { cancelScroll: function (e) { cancelAnimationFrame(S), S = null, e || C("scrollCancel", g) } }; E.animateScroll = function (i, c, e) { var s, u, o, r, a, l, d, m, f, t, h = O(g || L, e || {}), p = "[object Number]" === Object.prototype.toString.call(i), n = p || !i.tagName ? null : i; (p || n) && (s = b.pageYOffset, h.header && !y && (y = document.querySelector(h.header)), v = v || w(y), a = p ? i : function (e, t, n, o) { var r = 0; if (e.offsetParent) for (; r += e.offsetTop, e = e.offsetParent;); return r = Math.max(r - t - n, 0), o && (r = Math.min(r, I() - b.innerHeight)), r }(n, v, parseInt("function" == typeof h.offset ? h.offset(i, c) : h.offset, 10), h.clip), l = a - s, d = I(), f = function (e) { var t, n; o = (m += e - (u = u || e)) / parseInt(h.speed, 10), r = s + l * (t = o = 1 < o ? 1 : o, "easeInQuad" === h.easing && (n = t * t), "easeOutQuad" === h.easing && (n = t * (2 - t)), "easeInOutQuad" === h.easing && (n = t < .5 ? 2 * t * t : (4 - 2 * t) * t - 1), "easeInCubic" === h.easing && (n = t * t * t), "easeOutCubic" === h.easing && (n = --t * t * t + 1), "easeInOutCubic" === h.easing && (n = t < .5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1), "easeInQuart" === h.easing && (n = t * t * t * t), "easeOutQuart" === h.easing && (n = 1 - --t * t * t * t), "easeInOutQuart" === h.easing && (n = t < .5 ? 8 * t * t * t * t : 1 - 8 * --t * t * t * t), "easeInQuint" === h.easing && (n = t * t * t * t * t), "easeOutQuint" === h.easing && (n = 1 + --t * t * t * t * t), "easeInOutQuint" === h.easing && (n = t < .5 ? 16 * t * t * t * t * t : 1 + 16 * --t * t * t * t * t), h.customEasing && (n = h.customEasing(t)), n || t), b.scrollTo(0, Math.floor(r)), function (e, t) { var n, o, r, a = b.pageYOffset; if (e == t || a == t || (s < t && b.innerHeight + a) >= d) return E.cancelScroll(!0), o = t, r = p, 0 === (n = i) && document.body.focus(), r || (n.focus(), document.activeElement !== n && (n.setAttribute("tabindex", "-1"), n.focus(), n.style.outline = "none"), b.scrollTo(0, o)), C("scrollStop", h, i, c), !(S = u = null) }(r, a) || (S = b.requestAnimationFrame(f), u = e) }, (m = 0) === b.pageYOffset && b.scrollTo(0, 0), t = i, p || history.pushState && h.updateURL && history.pushState({ smoothScroll: JSON.stringify(h), anchor: t.id }, document.title, t === document.documentElement ? "#top" : "#" + t.id), C("scrollStart", h, i, c), E.cancelScroll(!0), b.requestAnimationFrame(f)) }; function n(e) { var t, n; !("matchMedia" in b && b.matchMedia("(prefers-reduced-motion)").matches || 0 !== e.button || e.metaKey || e.ctrlKey) && "closest" in e.target && (r = e.target.closest(o)) && "a" === r.tagName.toLowerCase() && !e.target.closest(g.ignore) && r.hostname === b.location.hostname && r.pathname === b.location.pathname && /#/.test(r.href) && (t = s(c(r.hash)), (n = (n = g.topOnEmptyHash && "#" === t ? document.documentElement : document.querySelector(t)) || "#top" !== t ? n : document.documentElement) && (e.preventDefault(), E.animateScroll(n, r))) } function a(e) { var t; null !== history.state && history.state.smoothScroll && history.state.smoothScroll === JSON.stringify(g) && history.state.anchor && ((t = document.querySelector(s(c(history.state.anchor)))) && E.animateScroll(t, null, { updateURL: !1 })) } function i(e) { t = t || setTimeout(function () { t = null, v = w(y) }, 66) } return E.destroy = function () { g && (document.removeEventListener("click", n, !1), b.removeEventListener("resize", i, !1), b.removeEventListener("popstate", a, !1), E.cancelScroll(), S = t = v = y = r = g = null) }, E.init = function (e) { if (!("querySelector" in document && "addEventListener" in b && "requestAnimationFrame" in b && "closest" in b.Element.prototype)) throw "Smooth Scroll: This browser does not support the required JavaScript methods and browser APIs."; E.destroy(), g = O(L, e || {}), y = g.header ? document.querySelector(g.header) : null, v = w(y), document.addEventListener("click", n, !1), y && b.addEventListener("resize", i, !1), g.updateURL && g.popstate && b.addEventListener("popstate", a, !1) }, E.init(e), E } }), new window.SmoothScroll('a[href*="#"]', { offset: 0 })</script>
+</body>
+
+</html>
